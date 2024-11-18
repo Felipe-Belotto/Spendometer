@@ -1,0 +1,60 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noArrayIndexKey": "off",
+        "noImplicitAnyLet": "off",
+        "noMisleadingCharacterClass": "off",
+        "noControlCharactersInRegex": "off"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off",
+        "useButtonType": "off",
+        "useValidAnchor": "off",
+        "useKeyWithClickEvents": "off"
+      },
+      "style": {
+        "noUnusedTemplateLiteral": "off",
+        "useImportType": "off",
+        "noVar": "off",
+        "noArguments": "off"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "off",
+        "noInnerDeclarations": "off"
+      },
+      "complexity": {
+        "noForEach": "off"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 120,
+    "ignore": []
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double",
+      "trailingCommas": "es5",
+      "semicolons": "always"
+    }
+  },
+  "json": {
+    "parser": {
+      "allowComments": true
+    }
+  },
+  "files": {
+    "ignore": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/.next/**"]
+  }
+}
